@@ -19,7 +19,13 @@
                 {
                     "type": "archive",
                     "url": "https://download.kde.org/stable/release-service/21.12.3/src/filelight-21.12.3.tar.xz",
-                    "sha256": "28fc076caf94217f732b7228e0c77dc40b5d490bcbb3df7866c2e772130578f0"
+                    "sha256": "28fc076caf94217f732b7228e0c77dc40b5d490bcbb3df7866c2e772130578f0",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 8763,
+                        "stable-only": true,
+                        "url-template": "https://download.kde.org/stable/release-service/$version/src/filelight-$version.tar.xz"
+                    }
                 },
                 {
                     "type": "patch",
