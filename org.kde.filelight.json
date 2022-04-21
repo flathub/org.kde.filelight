@@ -30,10 +30,6 @@
                 {
                     "type": "patch",
                     "path": "appdata.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "filter-out-sandbox-mounts.patch"
                 }
             ]
         }
