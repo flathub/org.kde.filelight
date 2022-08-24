@@ -22,18 +22,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/22.04.3/src/filelight-22.04.3.tar.xz",
-                    "sha256": "00ee4c583f06fb5a8004d63d74a2c295ee66fec53f14c7703798a50c8a572ff7",
+                    "url": "https://download.kde.org/stable/release-service/22.08.0/src/filelight-22.08.0.tar.xz",
+                    "sha256": "70561010c84a4f59d8e8cbd24ec31a55e85dc9af0dc4924058c7ddfb9e5004b7",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/release-service/$version/src/filelight-$version.tar.xz"
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "appdata.patch"
                 }
             ]
         }
