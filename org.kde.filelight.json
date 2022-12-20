@@ -8,8 +8,7 @@
         "--device=dri",
         "--share=ipc",
         "--socket=fallback-x11",
-        "--socket=wayland",
-        "--filesystem=home"
+        "--socket=wayland"
     ],
     "modules": [
         {
@@ -30,6 +29,10 @@
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/release-service/$version/src/filelight-$version.tar.xz"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "0001-OverviewPage-Hide-Scan-Home-Folder-button-in-Flatpak.patch"
                 }
             ]
         }

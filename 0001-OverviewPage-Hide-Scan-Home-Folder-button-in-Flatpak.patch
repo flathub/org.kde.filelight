@@ -1,0 +1,42 @@
+From 7aad0cde251a3c0d1c358ac14c3a658806ffbe61 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Timoth=C3=A9e=20Ravier?= <tim@siosm.fr>
+Date: Thu, 8 Dec 2022 13:20:01 +0100
+Subject: [PATCH] OverviewPage: Hide Scan Home Folder button in Flatpak
+
+To make sure that we scan the right folder, we need to always get the
+folder to scan via the xdg-desktop portal, otherwise we will only get a
+view that might be missing files or folders.
+
+Thus we hide the "Scan Home Folder" button to always have the user pick
+a folder via the portal.
+
+See: https://github.com/flathub/org.kde.filelight/pull/12
+See: https://github.com/flathub/org.kde.filelight/pull/14
+---
+ src/qml/OverviewPage.qml | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/src/qml/OverviewPage.qml b/src/qml/OverviewPage.qml
+index 9164c20..c3cdcb4 100644
+--- a/src/qml/OverviewPage.qml
++++ b/src/qml/OverviewPage.qml
+@@ -38,7 +38,7 @@ Kirigami.Page {
+         Flow {
+             Layout.alignment: Qt.AlignHCenter
+             Layout.maximumWidth: parent.width
+-            Layout.preferredWidth: button1.implicitWidth + spacing + button2.implicitWidth + (button3.visible ? spacing + button3.implicitWidth : 0)
++            Layout.preferredWidth: button1.implicitWidth + (button2.visible ? spacing + button2.implicitWidth : 0) + (button3.visible ? spacing + button3.implicitWidth : 0)
+             QQC2.ToolButton {
+                 id: button1
+                 icon.width: Kirigami.Units.iconSizes.huge
+@@ -48,6 +48,7 @@ Kirigami.Page {
+             }
+             QQC2.ToolButton {
+                 id: button2
++                visible: !inSandbox
+                 icon.width: Kirigami.Units.iconSizes.huge
+                 icon.height: Kirigami.Units.iconSizes.huge
+                 display: QQC2.AbstractButton.TextUnderIcon
+-- 
+2.38.1
+
