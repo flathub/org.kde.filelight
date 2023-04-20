@@ -21,18 +21,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/22.12.3/src/filelight-22.12.3.tar.xz",
-                    "sha256": "acc2ee910b209bf615b026de2c1b2a7092ce20944f9d6773426a70b48241bb80",
+                    "url": "https://download.kde.org/stable/release-service/23.04.0/src/filelight-23.04.0.tar.xz",
+                    "sha256": "2caa450ed7eeaeefa1c00f2b53bc5180b6249381d05589c81362a7ba92050f26",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/release-service/$version/src/filelight-$version.tar.xz"
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "0001-OverviewPage-Hide-Scan-Home-Folder-button-in-Flatpak.patch"
                 }
             ]
         }
