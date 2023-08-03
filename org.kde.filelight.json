@@ -26,9 +26,9 @@
                     "sha256": "3c26588ec81cb3ce334c7d70ccb28cd443eb7d333274aa68b1cbfe56f0ad0fbb",
                     "x-checker-data": {
                         "type": "anitya",
-                        "project-id": 8763,
+                        "project-id": 368663,
                         "stable-only": true,
-                        "url-template": "https://download.kde.org/stable/release-service/$version/src/filelight-$version.tar.xz"
+                        "url-template": "https://download.kde.org/unstable/release-service/$version/src/filelight-$version.tar.xz"
                     }
                 }
             ]
