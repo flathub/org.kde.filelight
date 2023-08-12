@@ -22,8 +22,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/unstable/release-service/23.07.80/src/filelight-23.07.80.tar.xz",
-                    "sha256": "9fc155c486c7dc15a2c1ac2449d42b9a70718a171759144d96e67d308b5b7fd8",
+                    "url": "https://download.kde.org/unstable/release-service/23.07.90/src/filelight-23.07.90.tar.xz",
+                    "sha256": "0eae6196c1396c766e770f6b694c6e9798ddb8b3eeb3f351209dfbfc8c976d90",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368663,
