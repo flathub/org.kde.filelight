@@ -4,6 +4,7 @@
     "runtime-version": "5.15-23.08",
     "sdk": "org.kde.Sdk",
     "command": "filelight",
+    "rename-icon": "filelight",
     "finish-args": [
         "--device=dri",
         "--share=ipc",
@@ -21,8 +22,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/23.08.4/src/filelight-23.08.4.tar.xz",
-                    "sha256": "af19226a9e3704f8088fabf381974124fd77983b88fa047f4b37a8b9d64436c7",
+                    "url": "https://download.kde.org/stable/release-service/23.08.5/src/filelight-23.08.5.tar.xz",
+                    "sha256": "b7fc4daefc0985dc4b0deeb3c25e09a1b85ff896560340e79cca5093d3f07522",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
@@ -30,6 +31,9 @@
                         "url-template": "https://download.kde.org/stable/release-service/$version/src/filelight-$version.tar.xz"
                     }
                 }
+            ],
+            "post-install": [
+                "desktop-file-edit --set-key=\"Icon\" --set-value=\"${FLATPAK_ID}\" ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop"
             ]
         }
     ]
