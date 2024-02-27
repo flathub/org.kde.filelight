@@ -4,6 +4,7 @@
     "runtime-version": "5.15-23.08",
     "sdk": "org.kde.Sdk",
     "command": "filelight",
+    "rename-icon": "filelight",
     "finish-args": [
         "--device=dri",
         "--share=ipc",
