@@ -13,6 +13,26 @@
     ],
     "modules": [
         {
+            "name": "kirigamiaddons",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "buildsystem": "cmake-ninja",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.2.1.tar.xz",
+                    "sha256": "657426f9ec55cfec5a7f04848ed2b4df2ac8bfcb33c25626ad239219d444ee98",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 242933,
+                        "stable-only": true,
+                        "url-template": "https://download.kde.org/stable/kirigami-addons/kirigami-addons-$version.tar.xz"
+                    }
+                }
+            ]
+        },
+        {
             "name": "filelight",
             "buildsystem": "cmake-ninja",
             "builddir": true,
@@ -22,8 +42,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/23.08.5/src/filelight-23.08.5.tar.xz",
-                    "sha256": "b7fc4daefc0985dc4b0deeb3c25e09a1b85ff896560340e79cca5093d3f07522",
+                    "url": "https://download.kde.org/stable/release-service/24.05.1/src/filelight-24.05.1.tar.xz",
+                    "sha256": "c5d6b8fb946c096f5cd806988aaea134b6c0c211f0de478217da5c7b237cec0b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
