@@ -42,8 +42,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/24.08.0/src/filelight-24.08.0.tar.xz",
-                    "sha256": "70599bcc0668870e82de202ff5b31dfb6536d8199d731bb97be0987a8a566289",
+                    "url": "https://download.kde.org/stable/release-service/24.08.1/src/filelight-24.08.1.tar.xz",
+                    "sha256": "8bd5f3477e8928a4f45da37a3f0ee2d469fcfee20f7b5197bfacff4772bb50a2",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
