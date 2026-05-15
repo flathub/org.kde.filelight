@@ -23,6 +23,9 @@
             "config-opts": [
                 "-DBUILD_TESTING=OFF"
             ],
+            "post-install": [
+                "desktop-file-edit --set-icon=${FLATPAK_ID} ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -35,9 +38,6 @@
                         "url-template": "https://download.kde.org/stable/release-service/$version/src/filelight-$version.tar.xz"
                     }
                 }
-            ],
-            "post-install": [
-                "desktop-file-edit --set-key=\"Icon\" --set-value=\"${FLATPAK_ID}\" ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop"
             ]
         }
     ]
