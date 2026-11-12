@@ -9,7 +9,8 @@
         "--device=dri",
         "--share=ipc",
         "--socket=fallback-x11",
-        "--socket=wayland"
+        "--socket=wayland",
+        "--filesystem=host"
     ],
     "cleanup": [
         "/share/doc",
